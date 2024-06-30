@@ -46,7 +46,17 @@ local plugins = {
     'nvim-telescope/telescope.nvim', tag = '0.1.8', -- 文件检索
     dependencies = { 'nvim-lua/plenary.nvim' } -- requires要改为dependencies
   },
-
+  {
+    'nvimdev/lspsaga.nvim',
+    after = 'nvim-lspconfig',
+    config = function()
+        require('lspsaga').setup({})
+    end,
+    dependencies = {
+        'nvim-treesitter/nvim-treesitter', -- optional
+        'nvim-tree/nvim-web-devicons',     -- optional
+    }
+  }
 }
 local opts = {} -- 注意要定义这个变量
 

@@ -25,3 +25,6 @@ keymap.set("n", "<C-H>", ":bprevious<CR>")
 keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
 keymap.set("n", "<leader>fo", ":NvimTreeFocus<CR>")
 
+-- lspsaga
+keymap.set('n','<leader>t', ":Lspsaga term_toggle<CR>")
+keymap.set('n','<leader>outline', ":Lspsaga outline<CR>")
